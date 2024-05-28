@@ -2,7 +2,7 @@ body{
   background-color: antiquewhite;
 }
 nav{
-  height: 90px;
+  height: 80px;
   border-bottom: 1px solid #000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -27,9 +27,11 @@ nav{
 }
 .nav-home{
   padding: 20px;
+  
 }
 .nav-shop{
   padding: 20px;
+  position: relative;
 }
 .nav-blog{
   padding: 20px;
@@ -62,4 +64,27 @@ nav{
 }
 ul{
   list-style-type: none;
+}
+.drop-box {
+  display: none; /* Drop box'ı varsayılan olarak gizler */
+  position: absolute; /* Drop box'ın konumunu metin kutusuna göre ayarlar */
+  top: 100%; /* Drop box'ı metin kutusunun altına yerleştirir */
+  right: 0; /* Drop box'ı metin kutusunun soluna yerleştirir */
+  background-color: rgb(240, 236, 231); /* Drop box'ın arka plan rengini ayarlar */
+  padding: 10px; /* Drop box'ın iç padding'ini ayarlar */
+  border: 3px solid #ccc; /* Drop box'ın kenarlığını ayarlar */
+  border-radius: 0.5rem;
+  z-index: 1; /* Drop box'ı diğer öğelerin üzerine yerleştirir */
+  width: 500px;
+  height: 300px;
+  color: black;
+  opacity: 0.5;
+}
+
+.nav-shop:hover .drop-box {
+  display: block; /* Drop box'ı metin kutusunun üzerine gelindiğinde gösterir */
+}
+
+.content{
+  margin-left: -40px; 
 }
