@@ -17,12 +17,16 @@ nav{
   margin-left: 100px;
   font-weight: bold;
   height: 90px;
+}
+.nav-header span:hover{
   cursor: pointer;
 }
 .nav-links{
   margin-left: 600px;
   margin-top: -70px;
   display: flex;
+}
+.nav-links li:hover{
   cursor: pointer;
 }
 .nav-home{
@@ -76,13 +80,17 @@ ul{
   border-radius: 0.5rem;
   z-index: 1; /* Drop box'ı diğer öğelerin üzerine yerleştirir */
   width: 500px;
-  height: 300px;
+  height: 200px;
   color: black;
   opacity: 0.5;
+  cursor: default;
 }
-
+.drop-box ul li span:hover {
+  cursor: pointer; /* Fare ile üzerine gelindiğinde imleç pointer'a dönüşür */
+}
 .nav-shop:hover .drop-box {
   display: block; /* Drop box'ı metin kutusunun üzerine gelindiğinde gösterir */
+
 }
 
 .content{
@@ -95,4 +103,31 @@ ul{
 
 .topwear{
   font-size: medium;
+}
+
+.bottomwear{
+  font-size: medium;
+  margin-left: 160px;
+  margin-top: -172px;
+}
+.content1{
+  margin-left: 120px;
+  padding: 0.2rem;
+}
+.content1 span:hover{
+  color: rgb(212, 52, 127);
+}
+
+.accessory{
+  font-size: medium;
+  margin-left: 350px;
+  margin-top: -172px;
+}
+.content2{
+  margin-left: 310px;
+  padding: 0.2rem;
+}
+
+.content2 span:hover{
+  color: rgb(212, 52, 127);
 }
