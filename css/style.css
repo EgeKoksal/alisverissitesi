@@ -82,7 +82,7 @@ ul{
   width: 500px;
   height: 200px;
   color: black;
-  opacity: 0.5;
+  opacity: 0.9;
   cursor: default;
 }
 .drop-box ul li span:hover {
@@ -141,7 +141,8 @@ ul{
   font-weight: bold;
   justify-content: center;
   margin-left: 6rem;
-  margin-top: 5rem;
+  margin-top: -1rem;
+  cursor: default;
 }
 
 #slogan{
@@ -151,27 +152,70 @@ ul{
   font-size: 60%;
 }
 
-.kaydırak {
+.swiper-wrapper{
   display: flex;
-  margin-left: 500px;
-  margin-top: 100px;
-  
-}
-.kaydırak img{
-  padding: 1rem;
-  width: 20%;
-  height: auto;
-  border-radius: 2rem;
 }
 
-.sağsol {
+.swiper-container {
+  display: flex;
+  margin-left: 350px;
+  margin-top: 100px;
+  height: -25rem;
+  background-color: #e6e2cd;
+  border-radius: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slide{
+ margin: 1rem;
+}
+.slide h1 {
+  width: 550px;
+  margin-top: 20px;
+  height: 200px;
+  font-size: 3rem;
+}
+
+.slide h2 {
+  font-size: 4rem;
+  /*position: fixed;  BUNU YAPMAK O EKRAND ONU SABİTLER AŞADA YUKARI DA GİTSEN ORDA DURUR*/ 
+  
+}
+.slide img{
+  width: 550px;
+  height: 550px;
+  margin-left: 40rem;
+  margin-top: -25rem;
+}
+
+.slide button {
+  font-size: larger;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: rgb(100, 94, 72);
+  padding: 0.5rem;
+  border-width: 0;
+}
+
+.slide button:hover {
+  background-color: white;
+  color: #000;
+  transition: background-color 0.6s ease;
+}
+
+
+
+
+
+
+
+.btn-sağsol {
   display: flex;
   justify-content: center;
   align-items: center;
   
 }
 
-.sağsol button{
+.btn-sağsol button{
   margin: 0.3rem;
   background-color: transparent;
   border: none;
