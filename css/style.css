@@ -18,6 +18,7 @@ nav{
   font-weight: bold;
   height: 90px;
 }
+
 .nav-header span:hover{
   cursor: pointer;
 }
@@ -92,7 +93,10 @@ ul{
   display: block; /* Drop box'ı metin kutusunun üzerine gelindiğinde gösterir */
 
 }
-
+.contents a{
+  text-decoration: none;
+  color: inherit;
+}
 .content{
   margin-left: -30px;
   padding: 0.2rem;
