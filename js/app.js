@@ -16,12 +16,12 @@ metinKutusu.addEventListener("mouseout", () => {
 //anasayfa dön butonları
 const homeBtn = document.querySelector(".nav-home");
 homeBtn.addEventListener("click", () =>{
-window.location.href = "https://sorni.netlify.app";
+window.location.href = "/alısverıssıtesı/index.html";
 });
 
 const sorniBtn = document.querySelector(".baslik");
 sorniBtn.addEventListener("click", () =>{
-window.location.href = "https://sorni.netlify.app";
+window.location.href = "/alısverıssıtesı/index.html";
 })
 
 
