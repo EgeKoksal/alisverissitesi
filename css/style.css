@@ -90,6 +90,21 @@ ul{
   opacity: 0.9;
   cursor: default;
 }
+
+.pencere {
+  display: none; /* Varsayılan olarak gizle */
+  position: fixed; /* Sabit konumlu yap */
+  top: 50%; /* Pencereyi ekranın ortasına dikey olarak yerleştir */
+  left: 50%; /* Pencereyi ekranın ortasına yatay olarak yerleştir */
+  transform: translate(-50%, -50%); /* Pencereyi konumlandırırken kaymayı düzelt */
+  width: 80%; /* Pencerenin genişliği */
+  max-width: 600px; /* Pencerenin en fazla genişliği */
+  background-color: white; /* Pencerenin arka plan rengi */
+  padding: 20px; /* Pencerenin iç kenar boşluğu */
+  border: 1px solid #ccc; /* Pencerenin kenarlığı */
+  z-index: 10; 
+}
+
 .drop-box ul li span:hover {
   cursor: pointer; /* Fare ile üzerine gelindiğinde imleç pointer'a dönüşür */
 }
@@ -200,9 +215,6 @@ ul{
   height: 100px;
   font-size: 3rem;
 }
-
-
-
 .slide h2 {
   font-size: 4rem;
   /*position: fixed;  BUNU YAPMAK O EKRAND ONU SABİTLER AŞADA YUKARI DA GİTSEN ORDA DURUR*/ 
@@ -257,6 +269,7 @@ left: 2rem;
 top: 8rem;
 }
 .sidecontents h2{
+  cursor: default;
   font-size: medium;
 }
 .sidecontent a{
@@ -286,15 +299,17 @@ top: 8rem;
 
 .card h1{
   font-size: 15px;
+  cursor: default;
 }
 .card h2{
   position: absolute;
   margin-top: 2rem;
   font-size: 15px;
+  cursor: default;
 }
 
 .card p{
-background-color: rgb(185, 197, 197);
+background-color: rgb(141, 142, 143);
 font-size: small;
 cursor: pointer;
 padding: 5px;
@@ -304,7 +319,7 @@ border-radius: 0.2rem;
   position: absolute;
   height: 400px;
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
 }
 .image-hover {
   height: 400px;
@@ -317,3 +332,9 @@ border-radius: 0.2rem;
 .card:hover .image-hover {
   opacity: 1;
 }
+
+.card img{
+  cursor: pointer;
+}
+
+
