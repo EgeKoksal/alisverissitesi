@@ -30,9 +30,17 @@ kutular.forEach(kutu => {
   kutu.addEventListener("click", () => {
     önPencere.style.display = "block"; // Ön pencereyi göster
     const resimUrl = kutu.src; // Tıklanan resmin URL'sini al
-    imageHover.forEach.src = resimUrl; // Ön penceredeki resmin URL'sini ayarla
+    imageHover.src = resimUrl; // Ön penceredeki resmin URL'sini ayarla
   });
 });
+
+// pencere kapatma
+const kapama = document.querySelector(".kapatma");
+const kapamaPenc = document.querySelector(".pencere");
+
+kapama.addEventListener("click", () => {
+  kapamaPenc.style.display = "none";
+})
 
 // slider butonların çalışması
 const mainSlider = document.querySelectorAll(".swiper-container");

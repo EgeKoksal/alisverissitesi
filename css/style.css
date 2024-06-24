@@ -74,36 +74,6 @@ aside{
 ul{
   list-style-type: none;
 }
-.drop-box {
-  display: none; /* Drop box'ı varsayılan olarak gizler */
-  position: absolute; /* Drop box'ın konumunu metin kutusuna göre ayarlar */
-  top: 100%; /* Drop box'ı metin kutusunun altına yerleştirir */
-  right: 0; /* Drop box'ı metin kutusunun soluna yerleştirir */
-  background-color: rgb(240, 236, 231); /* Drop box'ın arka plan rengini ayarlar */
-  padding: 10px; /* Drop box'ın iç padding'ini ayarlar */
-  border: 3px solid #ccc; /* Drop box'ın kenarlığını ayarlar */
-  border-radius: 0.5rem;
-  z-index: 1; /* Drop box'ı diğer öğelerin üzerine yerleştirir */
-  width: 500px;
-  height: 200px;
-  color: black;
-  opacity: 0.9;
-  cursor: default;
-}
-
-.pencere {
-  display: none; /* Varsayılan olarak gizle */
-  position: fixed; /* Sabit konumlu yap */
-  top: 50%; /* Pencereyi ekranın ortasına dikey olarak yerleştir */
-  left: 50%; /* Pencereyi ekranın ortasına yatay olarak yerleştir */
-  transform: translate(-50%, -50%); /* Pencereyi konumlandırırken kaymayı düzelt */
-  width: 80%; /* Pencerenin genişliği */
-  max-width: 600px; /* Pencerenin en fazla genişliği */
-  background-color: white; /* Pencerenin arka plan rengi */
-  padding: 20px; /* Pencerenin iç kenar boşluğu */
-  border: 1px solid #ccc; /* Pencerenin kenarlığı */
-  z-index: 10; 
-}
 
 .drop-box ul li span:hover {
   cursor: pointer; /* Fare ile üzerine gelindiğinde imleç pointer'a dönüşür */
@@ -337,4 +307,46 @@ border-radius: 0.2rem;
   cursor: pointer;
 }
 
+.drop-box {
+  display: none; /* Drop box'ı varsayılan olarak gizler */
+  position: absolute; /* Drop box'ın konumunu metin kutusuna göre ayarlar */
+  top: 100%; /* Drop box'ı metin kutusunun altına yerleştirir */
+  right: 0; /* Drop box'ı metin kutusunun soluna yerleştirir */
+  background-color: rgb(240, 236, 231); /* Drop box'ın arka plan rengini ayarlar */
+  padding: 10px; /* Drop box'ın iç padding'ini ayarlar */
+  border: 3px solid #ccc; /* Drop box'ın kenarlığını ayarlar */
+  border-radius: 0.5rem;
+  z-index: 1; /* Drop box'ı diğer öğelerin üzerine yerleştirir */
+  width: 500px;
+  height: 200px;
+  color: black;
+  opacity: 0.9;
+  cursor: default;
+}
 
+.pencere {
+  display: none; /* Varsayılan olarak gizle */
+  position: fixed; /* Sabit konumlu yap */
+  top: 30%; /* Pencereyi ekranın ortasına dikey olarak yerleştir */
+  left: 50%; /* Pencereyi ekranın ortasına yatay olarak yerleştir */
+  transform: translate(-50%, -50%); /* Pencereyi konumlandırırken kaymayı düzelt */
+  width: 80%; /* Pencerenin genişliği */
+  height: auto;
+  max-width: 600px; /* Pencerenin en fazla genişliği */
+  background-color: white; /* Pencerenin arka plan rengi */
+  padding: 20px; /* Pencerenin iç kenar boşluğu */
+  border: 1px solid #ccc; /* Pencerenin kenarlığı */
+  z-index: 10; 
+}
+
+.kapatma{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.kapatma:hover{
+  color: brown;
+}
