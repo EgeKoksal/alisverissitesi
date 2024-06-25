@@ -279,7 +279,7 @@ top: 8rem;
 }
 
 .card p{
-background-color: rgb(141, 142, 143);
+background-color: rgb(218, 228, 238);
 font-size: small;
 cursor: pointer;
 padding: 5px;
@@ -327,25 +327,37 @@ border-radius: 0.2rem;
 .pencere {
   display: none; /* Varsayılan olarak gizle */
   position: fixed; /* Sabit konumlu yap */
-  top: 30%; /* Pencereyi ekranın ortasına dikey olarak yerleştir */
+  top: 50%; /* Pencereyi ekranın ortasına dikey olarak yerleştir */
   left: 50%; /* Pencereyi ekranın ortasına yatay olarak yerleştir */
   transform: translate(-50%, -50%); /* Pencereyi konumlandırırken kaymayı düzelt */
-  width: 80%; /* Pencerenin genişliği */
+  width: 50%; /* Pencerenin genişliği */
   height: auto;
-  max-width: 600px; /* Pencerenin en fazla genişliği */
+  max-width: 1500px; /* Pencerenin en fazla genişliği */
   background-color: white; /* Pencerenin arka plan rengi */
   padding: 20px; /* Pencerenin iç kenar boşluğu */
   border: 1px solid #ccc; /* Pencerenin kenarlığı */
   z-index: 10;
-  
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: rgb(180, 180, 180);
+}
+
+.pencere img {
+ width: 300px;
+ height: auto;
+ border-radius: 0.8rem;
 }
 
 .kapatma{
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   right: 20px;
+  font-size: large;
+  background-color: rgb(227, 236, 236);
+  width: 15px;
+  height: 17px;
+  border-radius: 0.4rem;
+  border: 5px solid transparent;
 }
 
 .kapatma:hover{

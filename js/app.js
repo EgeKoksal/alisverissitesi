@@ -24,13 +24,13 @@ sorniBtn.addEventListener("click", () => {
 //kıyafete tıklayınca pencere açılması
 const kutular = document.querySelectorAll(".image");
 const önPencere = document.querySelector(".pencere");
-const imageHover = önPencere.querySelectorAll(".image-hover")
+const pencereResmi = document.querySelector(".pencere-resmi");
+
 
 kutular.forEach(kutu => {
   kutu.addEventListener("click", () => {
-    önPencere.style.display = "block"; // Ön pencereyi göster
-    const resimUrl = kutu.src; // Tıklanan resmin URL'sini al
-    imageHover.src = resimUrl; // Ön penceredeki resmin URL'sini ayarla
+    önPencere.style.display = "block";
+    pencereResmi.src = kutu.src 
   });
 });
 
