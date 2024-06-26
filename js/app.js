@@ -25,14 +25,20 @@ sorniBtn.addEventListener("click", () => {
 const kutular = document.querySelectorAll(".image");
 const önPencere = document.querySelector(".pencere");
 const pencereResmi = document.querySelector(".pencere-resmi");
-
+const pencereBasligi = document.querySelector(".pencere-baslik"); // Yeni eklenen başlığı seçin
 
 kutular.forEach(kutu => {
   kutu.addEventListener("click", () => {
     önPencere.style.display = "block";
-    pencereResmi.src = kutu.src 
+    pencereResmi.src = kutu.src;
+
+    // Pencere başlığını kutuya bağlı resmin alt metninden (alt) alalım
+    const altMetin = kutu.getAttribute("alt");
+    pencereBasligi.textContent = altMetin;
   });
 });
+
+
 
 // pencere kapatma
 const kapama = document.querySelector(".kapatma");
