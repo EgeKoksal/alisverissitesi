@@ -25,7 +25,8 @@ sorniBtn.addEventListener("click", () => {
 const kutular = document.querySelectorAll(".image");
 const önPencere = document.querySelector(".pencere");
 const pencereResmi = document.querySelector(".pencere-resmi");
-const pencereBasligi = document.querySelector(".pencere-baslik"); // Yeni eklenen başlığı seçin
+const pencereBasligi = document.querySelector(".pencere-baslik");
+
 
 kutular.forEach(kutu => {
   kutu.addEventListener("click", () => {
