@@ -25,20 +25,14 @@ sorniBtn.addEventListener("click", () => {
 const kutular = document.querySelectorAll(".image");
 const önPencere = document.querySelector(".pencere");
 const pencereResmi = document.querySelector(".pencere-resmi");
-const pencereBasligi = document.querySelector(".pencere-baslik");
 
 
 kutular.forEach(kutu => {
   kutu.addEventListener("click", () => {
     önPencere.style.display = "block";
     pencereResmi.src = kutu.src;
-
-    // Pencere başlığını kutuya bağlı resmin alt metninden (alt) alalım
-    const altMetin = kutu.getAttribute("alt");
-    pencereBasligi.textContent = altMetin;
   });
 });
-
 
 
 // pencere kapatma
@@ -50,14 +44,27 @@ kapama.addEventListener("click", () => {
 })
 
 // slider butonların çalışması
-const mainSlider = document.querySelectorAll(".swiper-container");
+/*
+const swiperContainerlar = document.querySelectorAll(".swiper-slide");
 const nextButton = document.querySelector(".next");
 const prevButton = document.querySelector(".prev");
+let currentPosition = 0; // Şu anki container indeksini takip eder
 
-/*nextButton.addEventListener("click", () => {
-  mainSlider()
+nextButton.addEventListener("click", () => {
+  currentPosition++;
+  if (currentPosition >= swiperContainerlar.length) {
+    currentPosition = 0;
+  }
+  swiperContainerlar[currentPosition - 1].classList.add("hidden");
+  swiperContainerlar[currentPosition].classList.remove("hidden");
 });
 
 prevButton.addEventListener("click", () => {
-  mainSlider()
-});*/
+  currentPosition--;
+  if (currentPosition < 0) {
+    currentPosition = swiperContainerlar.length - 1;
+  }
+  swiperContainerlar[currentPosition + 1].classList.add("hidden");
+  swiperContainerlar[currentPosition].classList.remove("hidden");
+});
+*/
